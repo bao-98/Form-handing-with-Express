@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Hello Forms!</h1>
+
+    <h2>Class registration form</h2>
+    <!-- send a POST request to /courses -->
+    <form action="/courses" method="POST">
+        <label>
+            Enter your last name:
+            <input type="text" name="lastName">
+        </label>
+        <label>
+            Enter your student number:
+            <input type="number" name="studentNumber">
+        </label>
+        <fieldset>
+            <legend>Courses</legend>
+            <label>
+                CPSC 2600
+                <input type="radio" name="course" value="2600">
+            </label>
+            <label>
+                CPSC 2130
+                <input type="radio" name="course" value="2130">
+            </label>
+            <!-- with radio button groups, only one button can be pressed -->
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
